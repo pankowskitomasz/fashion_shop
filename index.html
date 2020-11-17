@@ -6,10 +6,11 @@
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="node_modules/tailwindcss/dist/tailwind.min.css">
-    <title>Fashion Shop | Coming soon!</title>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <title>Fashion Shop | Fashion at the best price</title>
 </head>
 <body>
-    <header class="absolute w-full top-0 left-0 h-20 bg-white shadow py-3">
+    <header class="absolute w-full top-0 left-0 h-20 bg-white shadow py-3 z-50">
         <nav class="h-full">
             <a href="index.html" class="inline-block mt-2 pl-3">
                 <img src="img/navbar_logo.png" class="float-left h-10" alt="logo">
@@ -17,26 +18,225 @@
                     FashionShop
                 </div>
             </a>
+            <button class="float-right w-8 h-8 navbar-toggler-icon inline-block md:hidden mt-4 mr-3">
+            </button>
+            <div class="nav-menu hidden md:inline-block font-menu float-right p-3 w-full md:w-auto text-right mt-3 border border-gray-200 bg-white md:border-none md:mt-2 md:text-lg">                
+                <a href="index.html" class="text-gray-900 mx-1 hover:text-gray-500 block md:inline">
+                    Home
+                </a>
+                <a href="products.html" class="text-gray-900 mx-1 hover:text-gray-500 block md:inline">
+                    Products
+                </a>
+                <a href="about.html" class="text-gray-900 mx-1 hover:text-gray-500 block md:inline"">
+                    About
+                </a>
+                <a href="contact.html" class="text-gray-900 mx-1 hover:text-gray-500 block md:inline"">
+                    Contact
+                </a>
+                <a href="user.html" class="text-gray-900 mx-1 hover:text-gray-500 block md:inline"">
+                    Login
+                </a>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="error-s1 flex items-center justify-items-center">
-            <div class="w-10/12 sm:w-6/12 text-center mx-auto text-shadow text-white">
-                <h2 class="text-4xl font-bold">Coming soon :)</h2>
-                <p class="text-xl pt-5">
-                    Hi, we are not ready yet, however we are staring soon. <br> 
-                    Please visit us again in a while.
-                </p>
+        <section class="index-s1 justify-items-center bg-gray-500 border-b border-gray-600">
+            <div class="owl-carousel" id="index-s1-owl">
+                <div class="w-full h-screen index-s1-slide-s1 flex items-center">
+                    <div class="p-4">
+                        <h4 class="uppercase mb-2 text-sm  text-white text-shadow">
+                            Summer Fashion
+                        </h4>
+                        <h2 class="mb-5 font-logo text-3xl font-bold text-white text-shadow">
+                            Causal Striped Cotton Tee
+                        </h2>
+                        <a href="products.html?productid=1" class="uppercase px-5 py-3 mr-2 text-center text-white bg-black hover:opacity-75 hover:text-black hover:bg-white">
+                            View now
+                        </a>
+                        <a href="products.html?productid=1&cartadd=1" class="uppercase px-5 py-3 mr-2 text-center text-black bg-white hover:opacity-75 hover:text-white hover:bg-black">
+                            Buy now
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full h-screen index-s1-slide-s2 flex items-center">
+                    <div class="p-4">
+                        <h4 class="uppercase mb-2 text-sm  text-white text-shadow">
+                            Summer Fashion
+                        </h4>
+                        <h2 class="mb-5 font-logo text-3xl font-bold text-white text-shadow">
+                            Causal Fashion Tops for Women
+                        </h2>
+                        <a href="products.html?productid=2" class="uppercase px-5 py-3 mr-2 text-center text-white bg-black hover:opacity-75 hover:text-black hover:bg-white">
+                            View now
+                        </a>
+                        <a href="products.html?productid=2&cartadd=1" class="uppercase px-5 py-3 mr-2 text-center text-black bg-white hover:opacity-75 hover:text-white hover:bg-black">
+                            Buy now
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full h-screen index-s1-slide-s3 flex items-center">
+                    <div class="p-4">
+                        <h4 class="uppercase mb-2 text-sm  text-white text-shadow">
+                            Summer Fashion
+                        </h4>
+                        <h2 class="mb-5 font-logo text-3xl font-bold text-white text-shadow">
+                            Wool Sweater for Women
+                        </h2>
+                        <a href="products.html?productid=1" class="uppercase px-5 py-3 mr-2 text-center text-white bg-black hover:opacity-75 hover:text-black hover:bg-white">
+                            View now
+                        </a>
+                        <a href="products.html?productid=1&cartadd=1" class="uppercase px-5 py-3 mr-2 text-center text-black bg-white hover:opacity-75 hover:text-white hover:bg-black">
+                            Buy now
+                        </a>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section class="index-s2 container mx-auto bg-white flex items-center p-10 minh-50vh">
+            <div class="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-center">
+                <div class="col-span-1 sm:col-span-2 md:col-span-3 p-6">
+                    <h4 class="uppercase mb-1 text-sm text-gray-700">
+                        Browse Product By
+                    </h4>
+                    <h2 class="mb-2 font-logo text-4xl text-gray-800">
+                        Category
+                    </h2>                    
+                </div>
+                <a class="col-span-1 bg-gray-500 hover:opacity-50 cat-s1 h-32 md:h-64 flex"
+                    href="products.html?category=men">
+                    <h3 class="text-white text-3xl text-shadow font-bold p-6 self-end mx-auto">
+                        Men
+                    </h3>
+                </a>
+                <a class="col-span-1 bg-gray-600 hover:opacity-50 cat-s2 h-32 md:h-64 flex"
+                    href="products.html?category=women">
+                    <h3 class="text-white text-3xl text-shadow font-bold p-6 self-end mx-auto">
+                        Women
+                    </h3>                    
+                </a>
+                <a class="col-span-1 sm:col-span-2 md:col-span-1 bg-gray-700 hover:opacity-50 cat-s3 h-32 md:h-64 flex"
+                    href="products.html?category=accessories">
+                    <h3 class="text-white text-3xl text-shadow font-bold p-6 self-end mx-auto">
+                        Accessories
+                    </h3>
+                </a>
+            </div>
+        </section>
+        <section class="index-s3 bg-gray-200 flex items-center p-16 minh-50vh">
+            <div class="container w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-center">
+                <div class="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4 p-6">
+                    <h4 class="uppercase mb-1 text-sm text-gray-700">
+                        See Whats New Around
+                    </h4>
+                    <h2 class="mb-2 font-logo text-4xl text-gray-800">
+                        Latest Products
+                    </h2>                    
+                </div>
+                <a class="col-span-1 bg-white border border-gray-400 m-2 text-gray-700 hover:bg-black hover:text-white hover:border-black" 
+                    href="products.html?productid=11">
+                    <img src="img/products/item_1.jpg"class="self-start bg-gray-300 h-48 w-full">
+                    <div class="text-md text-left p-3">
+                        <h3 class="mb-1">
+                            Item Name
+                        </h3>
+                        <p class="font-bold">
+                            $0.00
+                        </p>
+                    </div>
+                </a>
+                <a class="col-span-1 bg-white border border-gray-400 m-2 text-gray-700 hover:bg-black hover:text-white hover:border-black" 
+                    href="products.html?productid=11">
+                    <img src="img/products/item_1.jpg"class="self-start bg-gray-300 h-48 w-full">
+                    <div class="text-md text-left p-3">
+                        <h3 class="mb-1">
+                            Item Name
+                        </h3>
+                        <p class="font-bold">
+                            $0.00
+                        </p>
+                    </div>
+                </a>
+                <a class="col-span-1 bg-white border border-gray-400 m-2 text-gray-700 hover:bg-black hover:text-white hover:border-black" 
+                    href="products.html?productid=11">
+                    <img src="img/products/item_1.jpg"class="self-start bg-gray-300 h-48 w-full">
+                    <div class="text-md text-left p-3">
+                        <h3 class="mb-1">
+                            Item Name
+                        </h3>
+                        <p class="font-bold">
+                            $0.00
+                        </p>
+                    </div>
+                </a>
+                <a class="col-span-1 bg-white border border-gray-400 m-2 text-gray-700 hover:bg-black hover:text-white hover:border-black" 
+                    href="products.html?productid=11">
+                    <img src="img/products/item_1.jpg"class="self-start bg-gray-300 h-48 w-full">
+                    <div class="text-md text-left p-3">
+                        <h3 class="mb-1">
+                            Item Name
+                        </h3>
+                        <p class="font-bold">
+                            $0.00
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="index-s4 bg-gray-400 flex items-center p-16 minh-50vh">
+            <div class="container w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-center">
+                <div class="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4 p-6">
+                    <h4 class="uppercase mb-1 text-sm text-gray-700">
+                        Summer Sales
+                    </h4>
+                    <h2 class="mb-6 font-logo text-4xl text-gray-800">
+                        Get Up To 68% Discount
+                    </h2>   
+                    <a href="products.html?category=discount" class="uppercase px-5 py-3 mr-2 text-center text-white bg-black hover:opacity-75 hover:text-black hover:bg-white">
+                        Check now
+                    </a>                 
+                </div>
             </div>
         </section>
     </main>
-    <footer class="flex w-full h-16 text-white bg-gray-700 p-3 justify-center items-center border-t border-gray-800 text-center">
-        <p class="text-sm">
-            Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
-            <a class="hover:text-gray-500 hover:underline" href="privacy.html">Privacy policy</a>
-        </p>
+    <footer class="flex w-full text-white bg-gray-900 p-3 border-t border-gray-800 text-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 w-full text-center">
+            <div class="col-span-1 sm:text-left">
+                <div class="text-gray-700 font-logo mx-3 mb-4">
+                    FashionShop
+                </div>
+                <ul class="list-none text-sm sm:pl-5 text-gray-600 uppercase mb-6">
+                    <li>Hill Street 2, Chicago</li>
+                    <li>+(880)-011-223-344</li>
+                    <li>contact&#64;fs.fs</li>
+                </ul>
+            </div>
+            <div class="col-span-1 sm:text-right p-3 text-gray-600 ">
+                <a href="index.html" class="mx-1 hover:text-gray-500 block md:inline">
+                    Home
+                </a>
+                <a href="products.html" class="mx-1 hover:text-gray-500 block md:inline">
+                    Products
+                </a>
+                <a href="about.html" class="mx-1 hover:text-gray-500 block md:inline"">
+                    About
+                </a>
+                <a href="contact.html" class="mx-1 hover:text-gray-500 block md:inline"">
+                    Contact
+                </a>
+                <a href="user.html" class="mx-1 hover:text-gray-500 block md:inline"">
+                    Login
+                </a>
+            </div>
+            <div class="col-span-1 sm:col-span-2 border-t border-gray-700 p-3">
+                <p class="text-sm mx-auto text-gray-700">
+                    Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
+                    <a class="hover:text-gray-500 hover:underline" href="privacy.html">Privacy policy</a>
+                </p>                
+            </div>
+        </div>
     </footer>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
