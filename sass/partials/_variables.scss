@@ -1,16 +1,39 @@
 $backdrop__filter--privacy: blur(10px);
 $bg__blend--type: multiply;
+$bg__cat-img:
+    "../img/categories/men.jpg",
+    "../img/categories/women.jpg",
+    "../img/categories/accessories.jpg";
 $bg__classes:
     "error",
     "comingsoon",
-    "privacy";
+    "privacy",
+    "user",
+    "index-s1-slide",
+    "cat",
+    "index";
 $bg__comingsoon-img: "../img/bag.jpg";
 $bg__error-img: "../img/bag.jpg";
+$bg__index-img:
+    "",
+    "",
+    "",
+    "../img/lines_bg.png";
+$bg__index-slide-img:
+    "../img/index-slide/slide_1.jpg",
+    "../img/index-slide/slide_2.jpg",
+    "../img/index-slide/slide_3.jpg";
 $bg__privacy-img: "../img/privacy.jpg";
+$bg__user-img: 
+    "../img/triangles.jpg";
 $bg__aoa:
     $bg__error-img,
     $bg__comingsoon-img,
-    $bg__privacy-img;
+    $bg__privacy-img,
+    $bg__user-img,
+    $bg__index-slide-img,
+    $bg__cat-img,
+    $bg__index-img;
 $body__min-height: 100%;
 $color__bg-1: #fff;
 $color__dark: #333;

@@ -8,21 +8,28 @@
     @include background-blend($bg__blend--type, $color__bg-1);
 }
 
+%bg-index-slide{
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+.cat{
+    &-s1{
+        @extend %bg-index-slide;
+    }
+    &-s2{
+        @extend %bg-index-slide;
+    }
+    &-s3{
+        @extend %bg-index-slide;
+    }
+}
 .comingsoon{
     &-s1{
         @extend %bg-blend;
     }
 }
 .error{
-    &-s1{
-        @extend %bg-blend;
-    }
-}
-.privacy{
-    &-container{
-        background-color: $color__transparent !important;
-        backdrop-filter: $backdrop__filter--privacy;
-    }
     &-s1{
         @extend %bg-blend;
     }
@@ -37,6 +44,38 @@
         @include set-font-params($font-main__family,$font-main__size);
     }
 }
+.index{
+    &-s1{
+        &-slide{
+            &-s1{
+                @extend %bg-index-slide;
+            }
+            &-s2{
+                @extend %bg-index-slide;
+            }
+            &-s3{
+                @extend %bg-index-slide;
+            }
+        }
+    }
+    &-s4{
+        @extend %bg-index-slide;
+    }
+}
+.minh{
+    &-25vh{
+        min-height: 25vh;
+    }
+    &-50vh{
+        min-height: 50vh;
+    }
+    &-75vh{
+        min-height: 75vh;
+    }
+    &-100vh{
+        min-height: 100vh;
+    }
+}
 .navbar{
     &-toggler{
         &-icon{
@@ -44,9 +83,27 @@
         }
     }
 }
-
+.owl{
+    &-dots{
+        display: none;
+    }
+}
+.privacy{
+    &-container{
+        background-color: $color__transparent !important;
+        backdrop-filter: $backdrop__filter--privacy;
+    }
+    &-s1{
+        @extend %bg-blend;
+    }
+}
 .text{
     &-shadow{
         text-shadow: $text__shadow;
+    }
+}
+.user{
+    &-s1{
+        background-attachment: scroll;
     }
 }
