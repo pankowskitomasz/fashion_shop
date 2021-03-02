@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/tailwindcss/dist/tailwind.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
     <title>Fashion Shop | Page not found</title>
 </head>
 <body>
@@ -36,13 +35,45 @@
             </div>
         </section>
     </main>
-    <footer class="flex w-full h-16 text-white bg-gray-700 p-3 justify-center items-center border-t border-gray-800 text-center">
-        <p class="text-sm">
-            Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
-            <a class="hover:text-gray-500 hover:underline" href="privacy.html">Privacy policy</a>
-        </p>
+    <footer class="flex w-full text-white bg-gray-900 p-3 border-t border-gray-800 text-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 w-full text-center">
+            <div class="col-span-1 sm:text-left">
+                <div class="text-gray-700 font-logo mx-3 mb-4">
+                    FashionShop
+                </div>
+                <ul class="list-none text-sm sm:pl-5 text-gray-600 uppercase mb-6">
+                    <li><small>Hill Street 2, Chicago</small></li>
+                    <li><small>+(880)-011-223-344</small></li>
+                    <li><small>contact&#64;fs.fs</small></li>
+                </ul>
+            </div>
+            <div class="col-span-1 sm:text-right p-3 text-gray-600 ">
+                <a href="index.html" class="mx-1 hover:text-gray-500 block md:inline">
+                    Home
+                </a>
+                <a href="products.html" class="mx-1 hover:text-gray-500 block md:inline">
+                    Products
+                </a>
+                <a href="about.html" class="mx-1 hover:text-gray-500 block md:inline"">
+                    About
+                </a>
+                <a href="contact.html" class="mx-1 hover:text-gray-500 block md:inline"">
+                    Contact
+                </a>
+                <a href="user.html" class="mx-1 hover:text-gray-500 block md:inline"">
+                    Login
+                </a>
+            </div>
+            <div class="col-span-1 sm:col-span-2 border-t border-gray-700 p-3 pb-0">
+                <p class="text-sm mx-auto text-gray-500">
+                    <small>
+                        Copyright &copy; 2020-2021 Tomasz Pankowski. All rights reserved.
+                        <a class="hover:text-gray-700 hover:underline" href="privacy.html">Privacy policy</a>
+                    </small>
+                </p>                
+            </div>
+        </div>
     </footer>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>
